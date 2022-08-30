@@ -238,13 +238,66 @@ header {
   color: #3897F0;
 }
 .vecancies .drop_menu_card .drop_card_menu_content {
-  display: none;
+  padding: 32px 0 0 0;
+  display: block;
   position: absolute;
   width: 100%;
   overflow: auto;
 }
-.vecancies .drop_menu_card:active .drop_card_menu_content {
+.vecancies .drop_menu_card:hover .drop_card_menu_content {
   display: block;
+  background-color: white;
+}
+.vecancies .drop_menu_card .card_header {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 40px;
+  color: #FF7800;
+}
+.vecancies .drop_menu_card .card_descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #1B274A;
+  margin-top: 25px;
+}
+.vecancies .drop_menu_card .card_ul {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1B274A;
+  padding: 32px 0 0 0;
+}
+.vecancies .drop_menu_card li {
+  color: #FF7800;
+  position: relative;
+  font-size: 27px;
+  margin: 25px 0 0 35px;
+}
+.vecancies .drop_menu_card .card_ol {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1B274A;
+  padding: 32px 0 0 0;
+}
+.vecancies .drop_menu_card .card_ol li {
+  color: #FF7800;
+  position: relative;
+  font-size: 22px;
+  margin: 25px 0 0 35px;
+}
+.vecancies .drop_menu_card .card_btn {
+  background: #FF7800;
+  border: none;
+  border-radius: 4px;
+  width: 185px;
+  height: 64px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 48px 0 50px 0;
 }
 .vecancies .drop_menu_card span {
   font-weight: 400;
@@ -254,28 +307,4 @@ header {
 }
 .vecancies .drop_menu_card img {
   margin-left: 18px;
-}
-.vecancies .drop_menu_card .drop_card_menu_content .card_header {
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 40px;
-  color: #FF7800;
-}
-.vecancies .drop_menu_card .drop_card_menu_content .card_descr {
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 33px;
-  color: #1B274A;
-}
-.vecancies .drop_menu_card .drop_card_menu_content .card_ul {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 40px;
-  color: #1B274A;
-}
-.vecancies .drop_menu_card .drop_card_menu_content .card_ul li {
-  color: #FF7800;
-  position: relative;
-  font-size: 27px;
-  margin: 25px 0 0 20px;
 }/*# sourceMappingURL=style.min.css.map */
