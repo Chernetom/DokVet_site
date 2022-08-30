@@ -21,11 +21,19 @@ header
         color: #FFA14D
         text-decoration: none
         border-bottom:1.5px dashed
+        &:hover
+            color: #FFA14D
+        &:active
+            color: #B35300
     .menu_phone
         color: #FFA14D
         text-decoration: none 
         border-right: 1px solid grey
         padding-right: 8px
+        &:hover
+            color: #FFA14D
+        &:active
+            color: #B35300
     .menu_pad_li
         padding: 15px 0 0 0
     .menu_btn
@@ -34,6 +42,12 @@ header
         background-color: #FF7800
         color: white
         border-style: none
+        &:hover
+            background: #FFA14D
+        &:active
+            background: #B35300
+        &:disabled
+            background: #FFE8D4
     .i_padding
         padding-right: 7px
 .head_site
@@ -65,8 +79,10 @@ header
             line-height: 24px
             color: #1B274A
             text-decoration: none
-        .orange
-            color: #FF7800
+            &:hover
+                color: #FFA14D
+            &:active
+                color: #B35300
         .dropmenu_logo
             width: 10px
             height: 10px
@@ -76,6 +92,10 @@ header
             font-weight: 500
             font-size: 18px
             line-height: 24px
+            &:hover
+                color: #FFA14D
+            &:active
+                color: #B35300
             .head_site_dropdown_context
                 display: none
                 position: absolute
@@ -85,6 +105,10 @@ header
                 display: block
                 color: #1B274A
                 text-decoration: none
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
             &:hover .head_site_dropdown_context
                 display: block
 .route
@@ -107,6 +131,10 @@ header
                 color: #FF7800
                 &:last-child
                     margin-left: 9px
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
 .header1
     font-weight: 500
     font-size: 46px
@@ -127,8 +155,8 @@ header
     margin-top: 50px
     position: relative
     background: url('../img/main/main_bg.png')no-repeat 
-    background-position: 100% 30%
-    background-size: 50% 70%
+    background-position: 85% 30%
+    background-size: 752px 519px
     margin-bottom: 64px
     .main_info_ul
         li
@@ -152,6 +180,7 @@ header
     margin: 0 auto
 .vecancies
     margin-top: 76px
+    position: relative
     .drop_menu_card
         height: 89px
         border-bottom: 1px solid #3897F0
@@ -159,31 +188,41 @@ header
         justify-content: space-between
         align-items: center
         position: relative
+        text-decoration: none
         .drop_menu_link
             font-weight: 400
             font-size: 32px
             line-height: 40px
             color: #3897F0
-        .drop_card_menu_content
-                padding: 32px 0 0 0
-                display: block
-                position: absolute
-                width: 100%
-                overflow: auto
-        &:hover .drop_card_menu_content
-                display: block
-                background-color: white
+            &:hover
+                color: #FFA14D
+            &:active
+                color: #B35300
+        span
+            font-weight: 400
+            font-size: 14px
+            line-height: 20px
+            color: #3897F0
+        img
+            margin-left: 18px
+    .drop_card_menu_content
+        margin-top: 64px
+        position: reletive
         .card_header
-                font-weight: 400
-                font-size: 32px
-                line-height: 40px
-                color: #FF7800
+            display: flex
+            font-weight: 400
+            font-size: 32px
+            line-height: 40px
+            color: #FF7800
+            justify-content: space-between
+        img
+            margin-top: 10px
         .card_descr
             font-weight: 400
             font-size: 22px
             line-height: 33px
             color: #1B274A
-            .mod2
+        .mod2
             margin-top: 25px
         .card_ul
             font-weight: 500
@@ -195,7 +234,7 @@ header
             color: #FF7800
             position: relative
             font-size: 27px
-            margin:25px 0 0 35px
+            margin:25px 0 0 60px
         .card_ol
             font-weight: 500
             font-size: 32px
@@ -206,7 +245,7 @@ header
                 color: #FF7800
                 position: relative
                 font-size: 22px
-                margin:25px 0 0 35px
+                margin:25px 0 0 60px
         .card_btn
             background: #FF7800
             border: none
@@ -218,12 +257,213 @@ header
             font-size: 18px
             line-height: 27px
             margin:48px 0 50px 0
-        span
-            font-weight: 400
-            font-size: 14px
-            line-height: 20px
-            color: #3897F0
+            &:hover
+                background: #FFA14D
+            &:active
+                background: #B35300
+            &:disabled
+                background: #FFE8D4
+.advantages
+    margin: 95px 0 64px 0
+    .advantages_box
+        position: relative
+        display: flex
+        margin: 48px 0 72px 0
         img
-            margin-left: 18px
+            border-radius: 8px
+        &:last-child
+            margin: 48px 0 0 0
+        .descr_box
+            margin: 160px 0 0 100px 
+            width: 500px
+            height: 130px
+            .descr_head
+                font-weight: 500
+                font-size: 32px
+                line-height: 40px
+                color: #1B274A
+            .descr_ad
+                margin-top: 30px
+                font-weight: 400
+                font-size: 22px
+                line-height: 33px
+                color: #1B274A
+        .mod4
+            margin: 35px 0 0 100px
+        .mod3
+            margin: 160px 100px 0 0
+.form
+    background: url(../img/form/vg.png) no-repeat
+    background-size: 1447px 689px
+    padding-top: 120px
+    padding-bottom: 128px
+    background-position: 235px
+    .form_head
+        font-weight: 500
+        font-size: 22px
+        line-height: 33px
+        color: #1B274A
+    .form_descr
+        width: 400px
+        font-weight: 400
+        font-size: 16px
+        line-height: 24px
+        color: #1B274A
+        margin-top: 25px
+    .form_inp_box
+        margin-top: 8px
+        .form_inp
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: rgba(27, 39, 74, 0.32)
+            border: none
+            border-bottom: 1px solid rgba(27, 39, 74, 0.32)
+            width: 100%
+            padding-bottom: 18px
+            margin-top: 24px
+    // .form_comment
+    //     margin-top: 24px
+    //     .form_comment_header
+    //         font-weight: 400
+    //         font-size: 14px
+    //         line-height: 16px
+    //         color: #1B274A
+    //     .form_comment_descr
+    //         font-weight: 300
+    //         font-size: 16px
+    //         line-height: 20px
+    //         color: #1B274A
+    //         margin-top: 14px
+    //         padding-bottom: 18px
+    //         border-bottom: 1px solid rgba(27, 39, 74, 0.32)
+    .form_checkbox
+        display: flex
+        position: relative
+        max-width: 378px
+        margin-top: 49px
+        .form_checkbox_box
+            position: absolute
+            z-index: -1
+            opacity: 0
+        .form_checkbox_box+label
+            display: inline-flex
+            align-items: center
+            user-select: none
+            &::before
+                content: ''
+                display: inline-block
+                width: 24px
+                height: 24px
+                flex-shrink: 0
+                flex-grow: 0
+                border: 1px solid #FF7800
+                border-radius: 8px
+                margin-right: 24px
+                background-repeat: no-repeat
+                background-position: center center
+                background-size: 50% 50%
+        .form_checkbox_box:checked+label::before
+            background-color: #FF7800
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e")
+        .form_checkbox_descr
+            font-weight: 400
+            font-size: 12px
+            line-height: 14px
+            color: rgba(27, 39, 74, 0.64)
+    .form_btn
+        font-weight: 500
+        font-size: 18px
+        line-height: 27px
+        color: #FFFFFF
+        width: 184px
+        height: 64px
+        background-color: #FF7800
+        border: none
+        border-radius: 4px
+        margin-top: 32px
+        &:hover
+            background: #FFA14D
+        &:active
+            background: #B35300
+        &:disabled
+            background: #FFE8D4
+.social
+    min-height: 96px
+    background-color: rgba(56, 151, 240,0.1)
+    display: flex
+    justify-content: center
+    align-items: center
+    position: reletive
+    .social_box
+        display: flex
+        width: 50px
+        height: 50px
+        border-radius: 100%
+        background-color: #FFA14D
+        justify-content: center
+        align-items: center
+        text-decoration: none
+        margin-right: 24px
+        i
+            color: white
+            font-size: 34px
+    .social_descr
+        text-decoration: none
+        color: #FFA14D
+        font-weight: 500
+        font-size: 22px
+        line-height: 32px
+        margin-right: 65px
+.bottom_map
+    background: url(../img/map/map.png) center center/cover no-repeat
+    min-height: 702px
+    padding: 48px 0 0 275px
+    .bottom_map_block
+        padding: 64px 100px 0 100px
+        background-color: white
+        width: 770px
+        height: 606px
+        .block_header
+            font-weight: 500
+            font-size: 32px
+            line-height: 40px
+            color: #1B274A
+        .block_subheader
+            font-weight: 500
+            font-size: 22px
+            line-height: 33px
+            color: #1B274A
+            margin-top: 32px
+            img
+                margin: 0 18px 10px 0
+        .block_descr
+            margin-top: 18px
+            font-weight: 400
+            font-size: 16px
+            line-height: 24px
+            color: #6D758B
+        .block_link
+            display: flex
+            font-weight: 500
+            text-decoration: none
+            font-size: 22px
+            line-height: 33px
+            color: #FF7800
+            margin-top: 68px
+            &:hover
+                color: #FFA14D
+            &:active
+                color: #B35300
+            img
+                margin-top: 10px
+// footer
+//     min-height: 415px
+//     background-color: #2d2870
+//     .footer_tel
 
-                
+
+
+
+
+
