@@ -17,7 +17,7 @@
   <header>
     <div class="nav">
       <div class="container">
-        <ul class="menu">
+        <ul class="menu menu-hidden">
           <li class="menu_pad_li"><i class="fa-solid fa-location-dot i_padding"></i><a href="#" class="menu_link">ул. Коллонтай, 11 (метро Пр. Большевиков)</a></li>
           <li class="menu_pad_li"><img src="../img/menu/clock.png" alt="C"> Круглосуточно</li>
           <li class="menu_pad_li"><img src="../img/menu/phone.png" alt="P"> <a href="tel:+78122428755" class="menu_phone">+7 (812) 242-87-55</a> +7 (812) 242-87-44</li>
@@ -26,6 +26,13 @@
             Записаться
           </button></li>
         </ul>
+        <ul class="menu menu-visible">
+          <li class="menu_pad_li"><i class="fa-solid fa-location-dot i_padding"></i><a href="#" class="menu_link">Как проехать?</a></li>
+          <li><button class="menu_btn">
+            <i class="fa-solid fa-file-pen"></i>
+          </button></li>
+        </ul>
+
       </div>
     </div>
     <div class="head_site">
@@ -35,7 +42,7 @@
             <img class="logo_img" src="../img/main/main_logo.png" alt="#">
             <div class="head_site_text"><span>ДокВет</span><br> Ветеринарный центр</div>
           </div>
-          <div class="offset-md-4 col-md-5">
+          <div class="offset-md-1 col-md-8 col-xs-2 offset-lg-4 col-lg-5">
             <div class="head_site_right_box">
               <div class="head_site_dropdown">Услуги
                 <img class="dropmenu_logo" src="../img/menu/dropmenu.png" alt="#">
@@ -50,13 +57,21 @@
               <a href="#" class="head_site_right_text ">Контакты</a>
             </div>
           </div>
+          <div class="burger mob_visible">
+            <span>
+            </span>
+            <span>
+            </span>
+            <span>
+            </span>
+          </div>
         </div>
       </div>   
     </div>
     <div class="route">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-lg-3 col-md-4">
             <a href="#"><img class="home_img" src="../img/menu/home.png" alt="#" width="18px" height="16px"></a>
             <div class="route_text_box">
               <a href="#" class="route_text">Главная</a>
@@ -72,7 +87,7 @@
         <div class="row">
             <div class="col-md-6">
               <h1 class="header1">Работа в ДокВет</h1>
-              <h2 class="header2">Наша клиника — амбициозный проект с миссией изменить ветеринарную индустрию:</h2>
+              <h2 class="header2 ">Наша клиника — <div class="mob_visible"><br></div> амбициозный проект <div class="mob_visible"><br></div> с миссией изменить ветеринарную индустрию:</h2>
               <ul class="main_info_ul">
                 <li><div class="descr">Область в ветеринарии, <span>которая занимается диагностикой Врач поможет Вам оформить</span></div></li>
                 <li><div class="descr">Область в ветеринарии, <span>которая занимается диагностикой Врач поможет Вам оформить ветеринарный паспорт и чипировать Вашего питомца</span></div></li>
@@ -80,7 +95,7 @@
               </ul>
             </div>
             <div class="col-md-7">
-              <div class="descr mod1">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</div>
+              <div class="descr mod1">Врач-терапевт — <div class="mob_visible"><br></div>это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы,<div class="mob_visible"><br></div> как особенности выращивания, содержания и кормления питомца!</div>
             </div>
         </div>
       </div>
@@ -93,16 +108,16 @@
         <div class="col-md-6 header1">Открытые вакансии</div>
         <div class="col-md-12">
           <a class="drop_menu_card" href="#drop_cont">
-            <div class="drop_menu_link">Ветеринарный врач / ветеринарный врач хирург</div>
-            <span>Подробнее<img src="../img/card/card_disable.png" alt="#" width="17px"height="14px"></span>
+            <div class="drop_menu_link">Ветеринарный врач / <div class="mob_visible"><br></div> ветеринарный врач хирург</div>
+            <span><div class="podrob">Подробнее</div><img src="../img/card/card_disable.png" alt="#" ></span>
           </a>
           <a class="drop_menu_card" href="#drop_cont">
             <div class="drop_menu_link">Ассистент ветеринарного врача / операционная сестра</div>
-            <span>Подробнее<img src="../img/card/card_disable.png" alt="#" width="17px"height="14px"></span>
+            <span><div class="podrob">Подробнее</div><img src="../img/card/card_disable.png" alt="#" ></span>
           </a>
           <div class="drop_card_menu_content" id="drop_cont">
             <div class="card_header">Менеджер по работе с клиентами
-              <img src="../img/card/card_active.png" alt="#" width="17px"height="14px">
+              <img src="../img/card/card_active.png" alt="#" >
             </div>
             <ul class="card_ul">Наши ожидания:
               <li><div class="card_descr">Оконченное высшее профильное образование</div></li>
@@ -112,18 +127,18 @@
               <li><div class="card_descr">Заинтересованность в развитии и совершенствовании своих знаний  в области ветеринарии</div></li>
               <li><div class="card_descr">Способность выдерживать высокий темп работы и большую нагрузку, внимательность, аккуратность, коммуникабельность, стрессоустойчивость, умение работать в команде</div></li>
             </ul> 
-            <div class="card_descr mod2">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</div>
+            <div class="card_descr mod2">Врач-терапевт — <div class="mob_visible"><br></div>это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</div>
             <ol class="card_ol">Задачи:
               <li><div class="card_descr">Оконченное высшее профильное образование</div></li>
               <li><div class="card_descr">Практический опыт работы от 2-3 лет</div></li>
               <li><div class="card_descr">Любовь к животным и желание им помочь</div></li>
             </ol>
-            <ol class="card_ol">Условии труда:
+            <ol class="card_ol mob_hidden">Условии труда:
               <li><div class="card_descr">Оконченное высшее профильное образование</div></li>
               <li><div class="card_descr">Практический опыт работы от 2-3 лет</div> </li>
               <li><div class="card_descr">Любовь к животным и желание им помочь</div></li>
             </ol>
-            <div class="card_descr mod2">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</div>
+            <div class="card_descr mod2 mob_hidden">Врач-терапевт — это универсальный доктор. Именно с этого специалиста начинается любой приём, будь то лечение, профилактика или консультация на такие темы, как особенности выращивания, содержания и кормления питомца!</div>
             <button class="card_btn">Откликнуться</button>
           </div>
         </div>
@@ -135,9 +150,9 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="header1">Почему выбирают нас?</div>
+          <div class="header1">Почему<div class="mob_visible"><br></div> выбирают нас?</div>
           <div class="advantages_box">
-            <img src="../img/advantages/pic1.png" alt="#" width="570px" height="370px">
+            <img src="../img/advantages/pic1.png" alt="#">
             <div class="descr_box">
               <div class="descr_head">Командный подход</div> 
               <div class="descr_ad">Под крышей нашего центра собраны самые разные специалисты, что создает общую синергию и ведет к наиболее полному уходу за Вашим питомцем.</div>
@@ -148,10 +163,10 @@
               <div class="descr_head">Инновации и исследования</div> 
               <div class="descr_ad">Под крышей нашего центра собраны самые разные специалисты, что создает общую синергию и ведет к наиболее полному уходу за Вашим питомцем.</div>
             </div> 
-            <img src="../img/advantages/pic2.png" alt="#" width="570px" height="370px">
+            <img src="../img/advantages/pic2.png" alt="#">
           </div>
           <div class="advantages_box">
-            <img src="../img/advantages/pic3.png" alt="#" width="570px" height="370px">
+            <img src="../img/advantages/pic3.png" alt="#">
             <div class="descr_box mod4">
               <div class="descr_head">Экспертные ветеринары в каждом направлении</div> 
               <div class="descr_ad ">Под крышей нашего центра собраны самые разные специалисты, что создает общую синергию и ведет к наиболее полному уходу за Вашим питомцем.<br>Под крышей нашего центра собраны самые разные специалисты, что создает общую синергию и ведет к наиболее полному.</div>
@@ -165,7 +180,7 @@
   <div class="form">
     <div class="container">
       <div class="row">
-        <div class="offset-md-6 col-md-6">
+        <div class="offset-lg-6 col-lg-6 offset-md-1 col-md-8">
           <div class="form_head">Возникли вопросы или жалобы?</div>
           <div class="form_descr">Оставьте его в форме ниже<br> и наши менеджеры обязательно Вам ответят!</div>
           <div class="form_inp_box">
@@ -186,21 +201,21 @@
     <a href="#" class="social_box">
       <i class="fa-brands fa-instagram"></i>
     </a>
-    <a href="#" class="social_descr">/dokvet</a>
+    <a href="#" class="social_descr mob_hidden">/dokvet</a>
     <a href="#" class="social_box">
       <i class="fa-brands fa-facebook-f"></i>
     </a>
-    <a href="#" class="social_descr">/dokvetcom</a>
+    <a href="#" class="social_descr mob_hidden">/dokvetcom</a>
     <a href="#" class="social_box">
       <i class="fa-brands fa-vk"></i>
     </a>
-    <a href="#" class="social_descr">/dokvet</a>
+    <a href="#" class="social_descr mob_hidden">/dokvet</a>
   </div>
   <div class="bottom_map">
     <div class="bottom_map_block">
       <div class="block_header">Санкт-Петербург, ул. Коллонтай, 11</div>
       <div class="block_subheader">
-        <img src="../img/map/map_logo.png" alt="#" width="30px" height="23px">
+        <img src="../img/map/map_logo.png" alt="#" >
         Проспект Большевиков
       </div>
       <div class="block_subheader">Автобусные остановки:</div>
@@ -210,25 +225,153 @@
       <div class="block_descr">- Искровский проспект <br>
         (авт. 118, трол. 12, маршр. К-155А, К-12, К 83)
         </div>
-      <div class="block_subheader">Парковка на территории для пациентов и их хозяев</div>
+      <div class="block_subheader">Парковка на территории для пациентов <div class="mob_visible"><br></div> и их хозяев</div>
       <a href="#" class="block_link">
         Построить маршрут на Яндекс.Карты
         <img src="../img/map/arrow.png" alt="#" width="20px" height="17px">
       </a>
     </div>
   </div>
-  <!-- <footer>
+  <footer>
     <div class="container">
       <div class="row">
-        <div class="col-md-2">
-          <div class="footer_tel">
-            <img src="../img/menu/phone.png" alt="P"> Телефоны:
+        <div class="col-md-12">
+          <div class="footer_block">
+            <div class="footer_block_of">
+              <div class="footer_block_header">
+                Телефоны:
+              </div>
+              <a href="tel:+78122428755" class="footer_sublink">+7 (812) 242-87-55</a>
+              <a href="tel:+78122428744" class="footer_sublink">+7 (812) 242-87-44</a>
+              <div class="footer_block_header">
+                Адрес:
+              </div>
+              <a href="#" class="footer_adlink">ул. Коллонтай, 11<br> (метро Пр. Большевиков)</a>
+            </div>
+            <div class="footer_block_of">
+              <div class="footer_block_header">
+                Главная
+              </div>
+              <a href="#" class="footer_link">Ветцентр</a>
+              <a href="#" class="footer_link">Хозяевам питомцев</a>
+              <a href="#" class="footer_link">Конфиденциальность</a>
+              <a href="#" class="footer_link">Карта сайта</a>
+              <a href="#" class="footer_link">Конфиденциальность</a>
+              <a href="#" class="footer_link">Карта сайта</a>
+            </div>
+            <div class="footer_block_of">
+              <div class="footer_block_header">
+                Отделения
+              </div>
+              <a href="#" class="footer_link">Ветеринарная вацинация</a>
+              <a href="#" class="footer_link">Ветеринарная терапия</a>
+              <a href="#" class="footer_link">Ветеринарная хирургия</a>
+              <a href="#" class="footer_link">Ветеринарная диагностика</a>
+              <a href="#" class="footer_link">Ветеринарный стационар</a>
+              <a href="#" class="footer_link">Ветеринарная дерматология</a>
+            </div>
+          </div>
+          <div class="footer_logo_soc">
+            <div class="footer_logo">
+              <img class="footer_logo_img" src="../img/main/main_logo.png" alt="#">
+              <div class="footer_logo_text"><span>ДокВет</span><br> Ветеринарный центр</div>
+            </div>
+            <div class="footer_soc mobsm_hidden">
+              <div class="footer_block_header">
+                Следите за нами в соцсетях:
+              </div>
+              <div class="footer_soc_icon">
+                <a href="#" class="footer_soc_box">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer_soc_box">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="footer_soc_box">
+                  <i class="fa-brands fa-vk"></i>
+                </a>
+                <a href="#" class="footer_soc_box">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="footer_block_mob mobsm_visible">
+            <div class="footer_block_of">
+              <div class="footer_block_header">
+                Главная
+              </div>
+              <a href="#" class="footer_link">Ветцентр</a>
+              <a href="#" class="footer_link">Хозяевам питомцев</a>
+              <a href="#" class="footer_link">Конфиденциальность</a>
+              <a href="#" class="footer_link">Карта сайта</a>
+              <a href="#" class="footer_link">Конфиденциальность</a>
+              <a href="#" class="footer_link">Карта сайта</a>
+            </div>
+            <div class="footer_block_of">
+              <div class="footer_block_header">
+                Отделения
+              </div>
+              <a href="#" class="footer_link">Ветеринарная вацинация</a>
+              <a href="#" class="footer_link">Ветеринарная терапия</a>
+              <a href="#" class="footer_link">Ветеринарная хирургия</a>
+              <a href="#" class="footer_link">Ветеринарная диагностика</a>
+              <a href="#" class="footer_link">Ветеринарный стационар</a>
+              <a href="#" class="footer_link">Ветеринарная дерматология</a>
+            </div>
+            <div class="footer_block_of">
+              <div class="footer_block_header">
+                Телефоны:
+              </div>
+              <a href="tel:+78122428755" class="footer_sublink">+7 (812) 242-87-55</a>
+              <a href="tel:+78122428744" class="footer_sublink">+7 (812) 242-87-44</a>
+            </div>
+            <div class="footer_block_of">
+              <div class="footer_block_header">
+                Адрес:
+              </div>
+              <a href="#" class="footer_adlink">Санкт-Петербург, <br>ул. Коллонтай, 11<br>
+                <img src="../img/map/map_logo_black.png" alt="#">Проспект Большевиков
+              </a>
+            </div>
+            <div class="footer_logo_soc">
+              <div class="footer_soc">
+                <div class="footer_block_header">
+                  Следите за нами в соцсетях:
+                </div>
+                <div class="footer_soc_icon">
+                  <a href="#" class="footer_soc_box">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                  <a href="#" class="footer_soc_box">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                  <a href="#" class="footer_soc_box">
+                    <i class="fa-brands fa-vk"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer_bottom_text">
+            Coppyrights 2019 DOKVET.COM. All rights reserved.
+            <div class="footer_bottom_text_box">
+              <div class="footer_bottom_link">Политика конфиденциальности</div>
+              <div class="footer_bottom_link">Публичная оферта</div>
+              <div class="footer_bottom_link">Карта сайта</div>
+            </div>
+          </div>
+          <div class="footer_bottom_text_mob mobsm_visible">
+            <div class="footer_bottom_text_box">
+              <div class="footer_bottom_link">Политика конфиденциальности</div>
+              <div class="footer_bottom_link">Публичная оферта</div>
+            </div>
+            Coppyrights 2019 DOKVET.COM.<br> All rights reserved.
           </div>
         </div>
-        <div class="col-md-2"></div>
-        <div class="col-md-2"></div>
       </div>
     </div>
-  </footer> -->
+  </footer>
+
 </body>
 </html>

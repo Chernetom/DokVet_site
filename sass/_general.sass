@@ -51,8 +51,11 @@ header
     .i_padding
         padding-right: 7px
 .head_site
+    position: reletive
     display: flex
     margin-top: 18px
+    border-bottom: 1px solid rgba(27, 39, 74, 0.1)
+    padding-bottom: 12px
     .head_site_text
         color: #1B274A
         font-weight: 500
@@ -111,10 +114,28 @@ header
                     color: #B35300
             &:hover .head_site_dropdown_context
                 display: block
+    .burger
+        right: 18%
+        position: absolute
+        width: 64px
+        padding:10px 0 0 0
+        span
+            display: block
+            background-color: black
+            margin-bottom: 12px
+            height: 2px
+            border-radius: 40%
+            &:first-child
+                width: 100%
+            &:nth-child(2)
+                width: 85%
+            &:last-child
+                width: 65%
+                
 .route
     display: flex
     margin-top: 47px
-    .col-md-3
+    .col-lg-3
         position: relative
         .home_img
             position: absolute
@@ -204,6 +225,8 @@ header
             line-height: 20px
             color: #3897F0
         img
+            width:17px
+            height:14px
             margin-left: 18px
     .drop_card_menu_content
         margin-top: 64px
@@ -217,6 +240,8 @@ header
             justify-content: space-between
         img
             margin-top: 10px
+            width:17px
+            height:14px
         .card_descr
             font-weight: 400
             font-size: 22px
@@ -271,6 +296,8 @@ header
         margin: 48px 0 72px 0
         img
             border-radius: 8px
+            width: 570px
+            height: 370px
         &:last-child
             margin: 48px 0 0 0
         .descr_box
@@ -424,6 +451,7 @@ header
         background-color: white
         width: 770px
         height: 606px
+        border-radius: 8px
         .block_header
             font-weight: 500
             font-size: 32px
@@ -437,6 +465,8 @@ header
             margin-top: 32px
             img
                 margin: 0 18px 10px 0
+                width:30px
+                height:23px
         .block_descr
             margin-top: 18px
             font-weight: 400
@@ -457,10 +487,221 @@ header
                 color: #B35300
             img
                 margin-top: 10px
-// footer
-//     min-height: 415px
-//     background-color: #2d2870
-//     .footer_tel
+footer
+    min-height: 415px
+    background-color: #1b274a
+    .footer_block_header
+        color: #3897F0
+        font-weight: 500
+        font-size: 18px
+        line-height: 22px
+        margin-top: 26px
+        &:first-child
+            margin-top: 0px
+    .footer_block
+        margin-top: 40px
+        display: flex
+        .footer_block_of
+            max-width: 203px
+            display: flex
+            flex-direction: column
+            margin-right: 148px
+            &:first-child
+                margin-right: 66px
+                margin-left: 62px
+            .footer_link
+                text-decoration: none
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+                color: grey
+                margin-top: 8px
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
+                &:first-child
+                    margin-top: 16px
+            .footer_sublink
+                text-decoration: none
+                font-weight: 400
+                font-size: 18px
+                line-height: 22px
+                color: #EBF5FD
+                margin-top: 16px
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
+                    color: #FFA14D
+            .footer_adlink
+                text-decoration: none
+                border-bottom:1.5px dashed
+                font-weight: 400
+                font-size: 16px
+                line-height: 24px
+                color: #FFA14D
+                margin-top: 16px
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
+    .footer_block_mob
+        margin-top: 24px
+        margin-left: 18px
+        .footer_block_of
+            max-width: 234px
+            display: flex
+            flex-direction: column
+            margin-top: 10px
+            &:first-child
+                margin-top: 0
+            &:last-child
+                max-width: 230px
+            .footer_link
+                text-decoration: none
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+                color: #cdc4c4
+                margin-top: 8px
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
+                &:first-child
+                    margin-top: 16px
+            .footer_sublink
+                text-decoration: none
+                font-weight: 400
+                font-size: 18px
+                line-height: 22px
+                color: #EBF5FD
+                margin-top: 16px
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
+                    color: #FFA14D
+            .footer_adlink
+                text-decoration: none
+                font-weight: 400
+                font-size: 18px
+                line-height: 22px
+                color: white
+                margin-top: 8px
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
+                img
+                    width: 20px
+                    height: 15px
+                    margin-right: 8px
+    .footer_logo_soc
+        margin-top: 17px
+        margin-left: 62px
+        display: flex
+        .footer_logo
+            display: flex
+            margin-top: 28px
+            .footer_logo_img
+                width: 60px
+                height: 60px
+            .footer_logo_text
+                color: white
+                font-weight: 500
+                font-size: 10px
+                line-height: 20px
+                margin-left: 10px
+                padding: 5px 0 0 0
+                span
+                    font-weight: 500
+                    font-size: 28px
+                    line-height: 33px
+        .footer_soc
+            max-width: 258px        
+            margin-left: 86px
+            .footer_soc_icon
+                display: flex
+                justify-content: space-between
+                margin-top: 16px
+                .footer_soc_box     
+                    display: flex
+                    flex-shrink: 0
+                    width: 45px
+                    height: 45px
+                    border-radius: 100%
+                    background-color: white
+                    justify-content: center
+                    align-items: center
+                    text-decoration: none
+                    margin-right: 20px
+                    i
+                        color: #1b274a
+                        font-size: 27px
+    .footer_bottom_text
+        display: flex
+        justify-content: space-between
+        font-weight: 400
+        font-size: 14px
+        line-height: 22px
+        color: grey
+        padding: 10px 0 0 0
+        margin-top: 10px
+        margin-left: 62px
+        border-top: 1px solid grey
+        .footer_bottom_text_box
+            display: flex
+            .footer_bottom_link
+                text-decoration: none
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+                color: white
+                margin-right: 24px
+                &:last-child
+                    margin: 0
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
+    .footer_bottom_text_mob
+        font-weight: 300
+        font-size: 14px
+        line-height: 20px
+        color: #FFFFFF
+        margin-top: 32px
+        margin-left: 18px
+        .footer_bottom_text_box
+            margin-bottom: 18px
+            .footer_bottom_link
+                text-decoration: none
+                font-weight: 400
+                font-size: 14px
+                line-height: 22px
+                color: rgba(235, 245, 253, 0.64)
+                margin-right: 24px
+                &:last-child
+                    margin: 0
+                &:hover
+                    color: #FFA14D
+                &:active
+                    color: #B35300
+.menu-hidden
+    display: flex
+.menu-visible
+    display: none
+.mob_visible
+    display: none
+.mob_hidden
+    display: block
+.mobsm_visible
+    display: none
+.mobsm_hidden
+    display: block
+
+
 
 
 
