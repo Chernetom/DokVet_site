@@ -24,7 +24,7 @@
             .mod3
                 margin: 29px 0 0 15px
     .form
-        background: none
+        background-position: 130px
     .vecancies
         .drop_menu_card
             .drop_menu_link
@@ -56,7 +56,7 @@
                 width: 333px
                 height: 290px
             .descr_box
-                margin: 4px 0 0 20px
+                margin: 4px 0 0 14px
                 .descr_head
                     font-size: 26px
                     line-height: 28px
@@ -69,6 +69,7 @@
             .drop_menu_link
                 font-size: 20px
         .drop_card_menu_content
+            
             .card_header
                 font-size: 20px
     .bottom_map
@@ -76,8 +77,18 @@
         .bottom_map_block
             padding: 64px 0px 0 0px
             width: 648px
+        .block_header
+            padding: 0 0 0 42px
+        .block_subheader
+            padding: 0 0 0 42px
+        .block_descr
+            padding: 0 0 0 42px
+        .block_link
+            padding: 0 0 0 42px
     .divider
         width: 680px
+    .form
+        background: none
     footer
         .footer_block
             .footer_block_of
@@ -90,10 +101,10 @@
         display: none
     .menu-visible
         display: flex
-    .mob_visible
-        display: inline
     .mob_hidden
         display: none
+    .mob_visible
+        display: inline
     .menu
         padding-right: 68px
         .menu_link
@@ -119,7 +130,9 @@
         width: 512px
     .vecancies
         margin-top: 64px
+        margin-bottom: 48px
         .drop_menu_card
+            padding: 0 3px 0 24px
             .podrob
                 display: none
             img
@@ -130,6 +143,7 @@
                 font-size: 22px
                 line-height: 33px
         .drop_card_menu_content
+            padding: 24px 3px 0 24px
             .card_header
                 font-size: 22px
             img
@@ -156,21 +170,25 @@
                 margin-bottom: 48px
     .advantages
         margin: 63px 0 64px 0
+        height: auto
         .advantages_box
             // margin-top: 440px
+            flex-direction: column
             margin: 0
             margin-top: 32px
-            margin-bottom: 440px
-            &:last-child
-                margin-bottom: 414px
+            margin-bottom: 10px
             img
-                display: none
+                order: 2
+                width: 512px
+                height: 332px
             .descr_box
                 margin: 0
+                height: auto
                 .descr_head
                     font-size: 24px
                 .descr_ad
                     margin-top: 24px
+                    margin-bottom: 24px
                     font-size: 22px
                     line-height: 33px
     .form
@@ -193,6 +211,7 @@
             .block_subheader
                 padding-left: 128px
                 font-size: 22px
+                margin-top: 24px
             .block_descr
                 padding-left: 128px
                 font-size: 16px
@@ -221,6 +240,9 @@
                 .footer_bottom_link
                     font-size: 11px
                     margin-right: 14px
+    .header1
+        font-size: 36px
+        line-height: 40px
 @media ( max-width:  575px)
     .menu-hidden
         display: none
@@ -230,7 +252,7 @@
         display: block
     .mobsm_hidden
         display: none
-          
+
     .menu
         padding-right: 10px
         padding-left: 14px
@@ -282,11 +304,14 @@
         margin-top: 48px
         padding-left: 14px
         padding-right: 14px
+        margin-bottom: 32px
         .drop_menu_card
             margin-top: 14px
             padding-left: 10px
             padding-bottom: 0px
             height: 71px
+            &:first-child
+                margin-top: 24px
             .drop_menu_link
                 font-size: 14px
                 line-height: 20px
@@ -296,24 +321,28 @@
                 margin-bottom: 7px
         .drop_card_menu_content
             margin-top: 23px
+            padding:15px 0 0 0px
             .card_header
                 font-size: 14px
+                padding:0 0 0 14px
             img
                 width: 10px
                 height: 10px
                 margin-top: 14px
             .card_ul
                 font-size: 18px
+                padding: 10px 0 0 14px
                 li
-                    margin: 6px 0 0 22px
+                    margin: 0px 0 0 22px
                     font-size: 22px
                     padding-left: 0
             .card_descr
                 font-size: 14px
                 line-height: 20px
+                padding:0px 14px 0 14px
             .card_ol
-                padding-top: 24px
                 font-size: 18px
+                padding:24px 0px 0 14px
                 li
                     margin: 11px 0 0 18px
                     font-size: 14px
@@ -333,10 +362,9 @@
             line-height: 32px
         .advantages_box
             margin-top: 24px
-            margin-bottom: 249px
             &:last-child
-                margin-bottom: 232px
             .descr_box
+                width: auto
                 .descr_head
                     font-size: 18px
                     line-height: 22px
@@ -344,6 +372,10 @@
                     margin-top: 18px
                     font-size: 14px
                     line-height: 20px
+            img
+                width: 272px
+                height: 176px
+                margin:0 auto
     .form
         padding: 76px 14px 48px 14px
         .form_head

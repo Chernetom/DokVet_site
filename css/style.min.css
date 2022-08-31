@@ -283,6 +283,7 @@ header {
 
 .vecancies {
   margin-top: 76px;
+  margin-bottom: 64px;
   position: relative;
 }
 .vecancies .drop_menu_card {
@@ -299,6 +300,17 @@ header {
           align-items: center;
   position: relative;
   text-decoration: none;
+  padding: 0 34px 0 62px;
+}
+.vecancies .drop_menu_card:first-child {
+  margin-top: 48px;
+  -webkit-box-shadow: 0 -1px 2px 1px rgba(89, 185, 250, 0.5019607843);
+          box-shadow: 0 -1px 2px 1px rgba(89, 185, 250, 0.5019607843);
+}
+.vecancies .drop_menu_card:nth-child(2) {
+  margin-top: 24px;
+  -webkit-box-shadow: 0 1px 2px 1px rgba(89, 185, 250, 0.5019607843);
+          box-shadow: 0 1px 2px 1px rgba(89, 185, 250, 0.5019607843);
 }
 .vecancies .drop_menu_card .drop_menu_link {
   font-weight: 400;
@@ -313,6 +325,9 @@ header {
   color: #B35300;
 }
 .vecancies .drop_menu_card span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -325,7 +340,11 @@ header {
 }
 .vecancies .drop_card_menu_content {
   margin-top: 64px;
+  padding: 32px 34px 0 62px;
   position: reletive;
+  -webkit-box-shadow: 0 0 10px 1px rgba(89, 185, 250, 0.5019607843);
+          box-shadow: 0 0 10px 1px rgba(89, 185, 250, 0.5019607843);
+  border-radius: 8px;
 }
 .vecancies .drop_card_menu_content .card_header {
   display: -webkit-box;
@@ -1000,7 +1019,7 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
     margin: 29px 0 0 15px;
   }
   .form {
-    background: none;
+    background-position: 130px;
   }
   .vecancies .drop_menu_card .drop_menu_link {
     font-size: 30px;
@@ -1036,7 +1055,7 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
     height: 290px;
   }
   .advantages .advantages_box .descr_box {
-    margin: 4px 0 0 20px;
+    margin: 4px 0 0 14px;
   }
   .advantages .advantages_box .descr_box .descr_head {
     font-size: 26px;
@@ -1060,8 +1079,23 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
     padding: 64px 0px 0 0px;
     width: 648px;
   }
+  .bottom_map .block_header {
+    padding: 0 0 0 42px;
+  }
+  .bottom_map .block_subheader {
+    padding: 0 0 0 42px;
+  }
+  .bottom_map .block_descr {
+    padding: 0 0 0 42px;
+  }
+  .bottom_map .block_link {
+    padding: 0 0 0 42px;
+  }
   .divider {
     width: 680px;
+  }
+  .form {
+    background: none;
   }
   footer .footer_block .footer_block_of .footer_adlink {
     font-size: 11px;
@@ -1079,11 +1113,11 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
     display: -ms-flexbox;
     display: flex;
   }
-  .mob_visible {
-    display: inline;
-  }
   .mob_hidden {
     display: none;
+  }
+  .mob_visible {
+    display: inline;
   }
   .menu {
     padding-right: 68px;
@@ -1118,6 +1152,10 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
   }
   .vecancies {
     margin-top: 64px;
+    margin-bottom: 48px;
+  }
+  .vecancies .drop_menu_card {
+    padding: 0 3px 0 24px;
   }
   .vecancies .drop_menu_card .podrob {
     display: none;
@@ -1130,6 +1168,9 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
     font-weight: 400;
     font-size: 22px;
     line-height: 33px;
+  }
+  .vecancies .drop_card_menu_content {
+    padding: 24px 3px 0 24px;
   }
   .vecancies .drop_card_menu_content .card_header {
     font-size: 22px;
@@ -1165,26 +1206,34 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
   }
   .advantages {
     margin: 63px 0 64px 0;
+    height: auto;
   }
   .advantages .advantages_box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 0;
     margin-top: 32px;
-    margin-bottom: 440px;
-  }
-  .advantages .advantages_box:last-child {
-    margin-bottom: 414px;
+    margin-bottom: 10px;
   }
   .advantages .advantages_box img {
-    display: none;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 512px;
+    height: 332px;
   }
   .advantages .advantages_box .descr_box {
     margin: 0;
+    height: auto;
   }
   .advantages .advantages_box .descr_box .descr_head {
     font-size: 24px;
   }
   .advantages .advantages_box .descr_box .descr_ad {
     margin-top: 24px;
+    margin-bottom: 24px;
     font-size: 22px;
     line-height: 33px;
   }
@@ -1215,6 +1264,7 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
   .bottom_map .bottom_map_block .block_subheader {
     padding-left: 128px;
     font-size: 22px;
+    margin-top: 24px;
   }
   .bottom_map .bottom_map_block .block_descr {
     padding-left: 128px;
@@ -1250,6 +1300,10 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
   footer .footer_bottom_text .footer_bottom_text_box .footer_bottom_link {
     font-size: 11px;
     margin-right: 14px;
+  }
+  .header1 {
+    font-size: 36px;
+    line-height: 40px;
   }
 }
 @media (max-width: 575px) {
@@ -1335,12 +1389,16 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
     margin-top: 48px;
     padding-left: 14px;
     padding-right: 14px;
+    margin-bottom: 32px;
   }
   .vecancies .drop_menu_card {
     margin-top: 14px;
     padding-left: 10px;
     padding-bottom: 0px;
     height: 71px;
+  }
+  .vecancies .drop_menu_card:first-child {
+    margin-top: 24px;
   }
   .vecancies .drop_menu_card .drop_menu_link {
     font-size: 14px;
@@ -1353,9 +1411,11 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
   }
   .vecancies .drop_card_menu_content {
     margin-top: 23px;
+    padding: 15px 0 0 0px;
   }
   .vecancies .drop_card_menu_content .card_header {
     font-size: 14px;
+    padding: 0 0 0 14px;
   }
   .vecancies .drop_card_menu_content img {
     width: 10px;
@@ -1364,19 +1424,21 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
   }
   .vecancies .drop_card_menu_content .card_ul {
     font-size: 18px;
+    padding: 10px 0 0 14px;
   }
   .vecancies .drop_card_menu_content .card_ul li {
-    margin: 6px 0 0 22px;
+    margin: 0px 0 0 22px;
     font-size: 22px;
     padding-left: 0;
   }
   .vecancies .drop_card_menu_content .card_descr {
     font-size: 14px;
     line-height: 20px;
+    padding: 0px 14px 0 14px;
   }
   .vecancies .drop_card_menu_content .card_ol {
-    padding-top: 24px;
     font-size: 18px;
+    padding: 24px 0px 0 14px;
   }
   .vecancies .drop_card_menu_content .card_ol li {
     margin: 11px 0 0 18px;
@@ -1402,10 +1464,9 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
   }
   .advantages .advantages_box {
     margin-top: 24px;
-    margin-bottom: 249px;
   }
-  .advantages .advantages_box:last-child {
-    margin-bottom: 232px;
+  .advantages .advantages_box .descr_box {
+    width: auto;
   }
   .advantages .advantages_box .descr_box .descr_head {
     font-size: 18px;
@@ -1415,6 +1476,11 @@ footer .footer_bottom_text_mob .footer_bottom_text_box .footer_bottom_link:activ
     margin-top: 18px;
     font-size: 14px;
     line-height: 20px;
+  }
+  .advantages .advantages_box img {
+    width: 272px;
+    height: 176px;
+    margin: 0 auto;
   }
   .form {
     padding: 76px 14px 48px 14px;
